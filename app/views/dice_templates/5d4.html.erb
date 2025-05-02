@@ -1,19 +1,11 @@
 <h1> 5d4 </h1>
 
 <ul>
-  <li>
-    <%= rand(1..4)%>
-  </li>
-  <li>
-    <%= rand(1..4) %>
-  </li>
-  <li>
-    <%= rand(1..4)%>
-  </li>
-  <li>
-    <%= rand(1..4) %>
-  </li>
-  <li>
-    <%= rand(1..4)%>
-  </li>
+
+  <% @dice_rolls.each do |roll| %>
+    <li>
+      <%= roll %>
+    </li>
+  <% end %>
+
 </ul>
